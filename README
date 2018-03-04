@@ -1,0 +1,19 @@
+Moldovan Gabriel-Nicolae
+325CD
+PC - Tema 3
+
+	Pentru realizarea acestei teme am facut o functie care citeste datele
+unui fisier BMP, organizandu-i pixelii intr-o matrice si o alta functie ce
+genereaza un fisier bmp pe baza unei imagini deja existente in program.
+	La task-ul 1 am parcurs matricea de pixeli asociata imaginii si am 
+colorat fiecare pixel alb dupa culoarea ceruta in input.
+	In scopul rezolvarii task-ului 2, in cadrul functiei "task2" am
+parcurs matricea de pixeli incepand din dreapta stanga jos. In fiecare caz
+va "lovi" ficare cifra in pixelul din coltul dreapta jos, dupa care apelez
+functia "markNumber". Functia parcurge matricea de 5x5 aferenta cifrei, 
+marcand fiecare pixel din ea pentru a evita parcurgerea multipla a unei cifre.
+Functia markNumber construieste in acelasi timp inca o matrice de 5x5, formata
+din 0 si 1 (0 = pixel care nu face parte din cifra, 1 = pixel ce face parte din
+cifra). Apoi apelez functia digit ce compara matricea contruita cu cele zece
+matrici ce reconstituie cifrele de la zero la noua (vezi fisierul matrici.h)
+urmand sa intoarca un char ce reprezinta cifra de scris in format txt.
